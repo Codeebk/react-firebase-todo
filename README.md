@@ -1,68 +1,42 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#React Fire To Dos App
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+###User Stories
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1) Firebase: https://firebase.google.com/
+2) React Router: https://reacttraining.com/react-router/web/guides/quick-start
+3) Create React App: https://facebook.github.io/create-react-app/docs/getting-started
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+*Curious when you should use firebase? Check out the use cases from from popular users*
+https://firebase.google.com/use-cases
 
-### `npm test`
+*Useful tips/tricks:*
+_You can shorten the `create-react-app` command to simply `cra` by putting this function in your bash profile:_
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```cra(){
+    'create-react-app' $1
+}```
 
-### `npm run build`
+*Here are our user stories:*
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1) As a user/visitor, I should be able to land on a page with the greeting "Welcome to React Firebase Todos"
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+2) As a user, I should be able see a menu that allows me to navigate to a dashboard screen
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3) As a user, when clicking on "dashboard", I should be redirected to a login screen unless I'm authenticated using my google credentials
 
-### `npm run eject`
+4) As a user, once authenticated by google and navigated to the dashboard, I should see a greeting banner and my profile photo from Google
+indicating I'm on the dashboard.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+5) As a user, once authenticated by google, I should see an option from nav that allows me to "logout" and be redirected away from the dashboard.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6) As a user, while navigated to the dashboard, I should see a form that allows me to add and persist todo items.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+7) As a user, while navigated to the dashboard, I should see a list of my current todo items.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+8) As a user, while navigated to the dashboard, I should see an option to delete an individual todo item.
 
-## Learn More
+9) As a user, while navigated to the dashboard, I should see an option to update an individual todo items from incomplete to complete.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+10) As a user, while navigated to the dashboard, I should see my todo items sorted by incompleteness.
