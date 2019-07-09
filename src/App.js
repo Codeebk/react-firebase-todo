@@ -1,26 +1,55 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import {
+  Route,
+  Link,
+  Switch,
+  Redirect,
+  BrowserRouter as Router
+} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+//This is the parent component
+class App extends Component {
+  render() {
+    return (
+      <Router>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/dashboard">Dashboard</Link></li>
+          </ul>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/dashboard" component={Dashboard} />
+          <Route exact path="/login" component={Login} />
+        </Switch>
+      </Router>
+    )
+  }
+}
+
+//Components are below
+
+function Home() {
+  return(
+    <div>
+      <h1>Welcome to React Firebase todos</h1>
     </div>
-  );
+  )
+}
+
+function Dashboard() {
+  return(
+    <div>
+      <h1>Welcome to React Firebase todos</h1>
+    </div>
+  )
+}
+
+function Login() {
+  return(
+    <div>
+      <h1>Welcome to React Firebase todos</h1>
+    </div>
+  )
 }
 
 export default App;

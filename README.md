@@ -4,21 +4,6 @@
 
 ###User Stories
 
-1) Firebase: https://firebase.google.com/
-2) React Router: https://reacttraining.com/react-router/web/guides/quick-start
-3) Create React App: https://facebook.github.io/create-react-app/docs/getting-started
-
-*Curious when you should use firebase? Check out the use cases from from popular users*
-https://firebase.google.com/use-cases
-
-*Useful tips/tricks:*
-_You can shorten the `create-react-app` command to simply `cra` by putting this function in your bash profile:_
-
-```cra(){
-    'create-react-app' $1
-}```
-
-*Here are our user stories:*
 
 1) As a user/visitor, I should be able to land on a page with the greeting "Welcome to React Firebase Todos"
 
